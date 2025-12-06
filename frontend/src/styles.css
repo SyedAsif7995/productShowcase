@@ -1,0 +1,287 @@
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+  font-family: Arial, sans-serif;
+  background-color: #9bb5ff;
+}
+
+
+
+.product-page {
+  padding: 20px 40px;
+  font-family: Arial, sans-serif;
+}
+
+
+.product-controls {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.product-controls input,
+.product-controls select {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 260px;
+  outline: none;
+}
+
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+
+.product-pagination {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.product-pagination button {
+  padding: 8px 18px;
+  margin: 0 10px;
+  border: none;
+  background-color: royalblue;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.product-pagination button:disabled {
+  background-color: #9bb5ff;
+  cursor: not-allowed;
+}
+
+.product-pagination span {
+  font-size: 16px;
+  margin: 0 10px;
+}
+.details-page, .enquiries-page {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  background: linear-gradient(135deg, #eef2ff, #dbeafe);
+  min-height: 100vh;
+}
+
+.details-card, .enquiries-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+.details-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 26px;
+  color: #4f46e5;
+  margin: 15px 0;
+}
+
+.enquiry-list-btn, .back-btn {
+  padding: 12px 20px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.back-btn {
+  background: #6b7280;
+}
+
+.enquiry-card {
+  background: #f9fafb;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.details-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0e7ff, #eef2ff);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 20px;
+}
+
+
+.details-card {
+  width: 100%;
+  max-width: 750px;
+  background: white;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  text-align: center;
+}
+
+
+.details-img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 12px;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+
+.details-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+.details-desc {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+
+.details-price {
+  font-size: 28px;
+  font-weight: bold;
+  color: #4f46e5;
+  margin-bottom: 30px;
+}
+
+
+.details-form {
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+
+.details-buttons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+
+.enquiry-btn {
+  padding: 12px 22px;
+  background: #4f46e5;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.enquiry-btn:hover {
+  background: #3730a3;
+}
+
+
+.back-btn {
+  padding: 12px 22px;
+  background: #6b7280;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  background: #4b5563;
+}
+.product-img{
+  height: 20vh;
+}
+.back-home-btn {
+  margin: 20px auto;
+  display: block;
+  padding: 12px 22px;
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+
+  
+  transition: 0.3s ease;
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+.back-home-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.5);
+  background: linear-gradient(135deg, #4338ca, #6366f1);
+}
+
+.enquiry-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;           
+  width: 100%;
+  max-width: 500px;    
+  margin: 0 auto;      
+}
+
+
+.enquiry-form input,
+.enquiry-form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  outline: none;
+  transition: 0.2s ease;
+  background: #f9fafb;
+}
+
+
+.enquiry-form input:focus,
+.enquiry-form textarea:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 4px rgba(79, 70, 229, 0.4);
+}
+
+
+.enquiry-form textarea {
+  min-height: 90px;
+  resize: none;
+}
+
+
+.send-btn {
+  padding: 12px 18px;
+  background: #4f46e5;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.send-btn:hover {
+  background: #3730a3;
+}
