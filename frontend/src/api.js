@@ -10,11 +10,11 @@ export async function fetchProduct(id) {
   const res = await fetch(`${API}/products/${id}`);
   return res.json();
 }
+
 export async function fetchEnquiriesByProduct(productId) {
   const res = await fetch(`${API}/enquiries/product/${productId}`);
   return res.json();
 }
-
 
 export async function sendEnquiry(body) {
   const res = await fetch(`${API}/enquiries`, {
